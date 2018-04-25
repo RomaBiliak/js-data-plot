@@ -174,7 +174,7 @@ mark_X_Y(){
 		this.canvas = document.getElementById(idCanvas);
 		this.ctx = this.canvas.getContext('2d');
 	}
- createImg(c,data){ alert(this.img_type);
+ createImg(c,data){
 	if (this.img_type =='canvas') return true;
 	var oldimg = document.getElementById('img_'+data['div_id']);
 	if(oldimg) oldimg.remove();
