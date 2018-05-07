@@ -1,9 +1,6 @@
 class Drow{
 	
 	constructor(data={}) {
-		this.parameters(data);
-	}
-	parameters(data={}) {
 		if("width" in data) this.width = parseInt(data['width']);
 		else this.width = 1200;
 		if("height" in data) this.height = parseInt(data['height']);
@@ -44,6 +41,28 @@ class Drow{
 		else this.font_size_mark = '24';
 		if("img_type" in data) this.img_type = data['img_type'];
 		else this.img_type = 'img';
+	}
+	parameters(data={}) {
+		if("width" in data) this.width = parseInt(data['width']);
+		if("height" in data) this.height = parseInt(data['height']);
+		if("mark_X" in data) this.mark_X = data['mark_X'];
+		if("mark_Y" in data) this.mark_Y  = data['mark_Y'];
+		if("title" in data) this.title = data['title'];
+		if("border_X_left" in data) this.border_X_left = parseInt(data['border_X_left']);
+		if("border_X_right" in data) this.border_X_right = parseInt(data['border_X_right']);
+		if("border_Y_top" in data) this.border_Y_top = parseInt(data['border_Y_top']);
+		if("border_Y_bottom" in data) this.border_Y_bottom = parseInt(data['border_Y_bottom']);
+		if("max_X" in data) this.max_X = parseFloat(data['max_X']);
+		if("max_Y" in data) this.max_Y = parseFloat(data['max_Y']);
+		if("min_X" in data) this.min_X = parseFloat(data['min_X']);
+		if("min_Y" in data) this.min_Y = parseFloat(data['min_Y']);
+		if("color_border" in data) this.color_border = data['color_border'];
+		if("color_mark" in data) this.color_mark = data['color_mark'];
+		if("background_color" in data) this.background_color = data['background_color'];
+		if("color" in data) this.color = data['default_color'];
+		if("font_size_title" in data) this.font_size_title = parseInt(data['font_size_title']);
+		if("font_size_mark" in data) this.font_size_mark = parseInt(data['font_size_mark']);
+		if("img_type" in data) this.img_type = data['img_type'];
 	}
 //метод розраховує параметри для маштабування і відображення даних на графіку
 zoomOption(){
