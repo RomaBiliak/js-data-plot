@@ -1,4 +1,4 @@
-class Drow{
+class Draw{
 	
 	constructor(data={}) {
 		if("width" in data) this.width = parseInt(data['width']);
