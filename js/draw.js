@@ -1,5 +1,4 @@
 class Draw{
-	
 	constructor(data={}) {
 		if("width" in data) this.width = parseInt(data['width']);
 		else this.width = 1200;
@@ -530,7 +529,5 @@ mark_X_Y(){
 		var img = this.canvas.toDataURL('image/png',1);
 		this.createImg(img, data);	
 		return	true;	
-	}
-					
+	}				
 }		
-// end class Drow------------------------------------------------------------------
